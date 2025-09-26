@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeLens - Sign In</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <a href="main.html">
+            <div class="back-link">
+            <i class="fas fa-arrow-left"></i> BACK TO NEWS
+        </div>
+        </a>
+
+    <!----------------------logo------------------------------>
+            <div class="logotitle">
+               <img src="pics\logo4.png" alt="My Logo" class="logo">
+               <h1>ReLive</h1>
+            </div>
+
+<!----------------------------card header------------------------>
+        <div class="form-card signin-card">
+            <div class="form-header">
+                <h3>Stay Informed With The Latest News</h3>
+            </div>
+
+            <div class="logintitle">
+                <h3>Log in</h3>
+            </div>
+
+<!----------------------------card------------------------>
+
+            <form id="loginForm">
+                <div class="input-group">
+
+                    <label for="email-signin">Email:</label>
+                    <img src="pics\Mail_Open.png" alt="menu" class="icons2">
+                    <input type="email" id="email-signin" placeholder="enter your email">
+                    
+                </div>
+
+
+
+                <div class="input-group" >
+                    <label for="password-signin">Password:</label>
+                   
+                    <div class="password-input">
+                        <input type="password" id="password-signin" placeholder="enter your password">
+                        <img src="pics\show.png" alt="menu" class="icons">
+                    </div>
+                </div>
+
+
+
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+<!----------------------------forgot----------------------->
+
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+<!----------------------------or----------------------->
+
+
+                <button type="submit" class="submit-btn">LogIn</button>
+                <div class="or-separator">
+                    <span>Or Continue With</span>
+                </div>
+
+<!----------------------------google----------------------->
+
+                <div class="social-login">
+                    <button class="social-btn google-btn"><i class="fab fa-google"></i> Google</button>
+                    <button class="social-btn facebook-btn"><i class="fab fa-facebook-f"></i> Facebook</button>
+                </div>
+
+<!----------------------------forgot----------------------->
+
+            </form>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+    
+        </div>
+    </div>
+<!----------------------------forgot----------------------->
+      
+<!----------------------------java----------------------->
+
+
+    <script>
+        const eye = document.querySelector('.password-input img');
+        const password = document.querySelector('#password-signin');
+        eye.addEventListener('click', () => {
+            if(password.type === 'password'){
+                password.type = 'text';
+                eye.classList.replace('fa-eye','fa-eye-slash');
+            } else {
+                password.type = 'password';
+                eye.classList.replace('fa-eye-slash','fa-eye');
+            }
+        });
+
+//------------------------------------
+
+        const form = document.getElementById('loginForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById('email-signin').value;
+      const pass = document.getElementById('password-signin').value;
+
+      // مثال: بيانات افتراضية لتجربة تسجيل الدخول
+      const demoEmail = "test@example.com";
+      const demoPass = "123456";
+
+      if(email === demoEmail && pass === demoPass){
+        alert("✅ Login successful!");
+        window.location.href = "home.html"; // الصفحة اللي بدك يحول إلها
+      } else {
+        alert("❌ Invalid email or password!");
+      }
+    });
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

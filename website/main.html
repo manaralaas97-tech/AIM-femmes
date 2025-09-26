@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />             <!-- supports most languages and symbols -->           
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- makes the site responsive (scales properly on mobile screens)-->
+  <title>ReLive</title>
+  <!-- Link to a CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+<!-- ------------------topdate-------------------------------- -->
+     <div class="datesection">
+          <div class="between">
+             <p id="current-date" class="date-text"></p>
+             <div class="line"></div>
+          </div>
+          <div class="between">
+             <div class="dot"></div>
+             <p >Live</p>
+         </div>
+     </div>
+<!-- ------------------AI robot-------------------------------- -->
+<div class="ai" onclick="toggleAskBar()">
+<img src="pics\AI.png" alt="My Logo" style="width: auto;" height="50px">
+</div>
+
+<div class="ask-bar" id="askBar">
+ 
+  <input type="text" placeholder="Ask Me Anything...">
+  <button>
+    <img src="pics\Chevron_Up.png" alt="My Logo" style="width: auto;" height="20px">
+  </button>
+</div>
+
+
+<!-- ------------------title-------------------------------- -->
+    <div class="titlebox">
+        <div class="title">
+            <div class="logotitle">
+               <img src="pics\logo4.png" alt="My Logo" class="logo">
+               <h1>ReLive</h1>
+               <h3>IMMERSIVE <br> NEWS</h3>
+            </div>
+           
+           </div>
+        <div class="right">
+           <div class="bottons">
+           <a href="login.html"> <button class="btn">Log in</button></a>
+            <a href="signup.html"><button class="btn">Sign up</button></a>
+
+           </div>
+
+
+
+
+
+          <div class="searchmenu">
+
+
+              <div class="search-container">
+                 <button class="search-btn"  onclick="toggleSearch()">
+                      <img src="pics\search3.png" alt="search" class="search-img">
+                 </button>
+
+                 <div class="search-barmain" id="searchBar">
+                      <input type="text" placeholder="Search..." id="searchInput">
+                 </div>
+              </div>
+
+
+
+
+
+              <div class="menu-container">
+                  <button class="menu-btn" onclick="toggleMenu()">
+                       <img src="pics\menu2.png" alt="menu" class="menu-img">
+                  </button>
+
+                   <div id="menu" class="menudrop">
+                       <div class="menutitle">
+                          <p>ReLive</p>
+                          <img src="pics\menu2.png" alt="menu" >
+                       </div>
+
+                        <div class="search-bar">
+                           <img src="pics\search3.png" alt="search" > 
+                           <input type="text" placeholder="Search..." id="searchInput">
+                           
+                        </div>
+                     
+
+
+
+
+                        <div class="itembox">
+                            <img src="pics\Line 11.png" alt="arow" style="height:20px; width:25 ;">
+                            <a href="#">Trending Topic</a>
+                        </div>
+                     
+                        <div class="itembox">
+                            <img src="pics\user.png" alt="arow"  style="height:30px; width:30px ;">
+                            <a href="#">profile<P style="font-size:10px; opacity: .5; margin: -1px;">your account sittings </P></a>
+                        </div>
+                        <div class="itembox">
+                            <img src="pics\cog.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">Setting</a>
+                        </div>
+                        <div class="itembox">
+                            <img src="pics\bookmark.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">Saved <P style="font-size:10px; opacity: .5; margin: -1px;">Your bookmarked articles and experiences</P> </a>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="pics\folder-open.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">Our Resources</a>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="pics\360°.png" alt="arow" style="height:20px; width:35px ;">
+                            <a href="#">AR & 360°  <P style="font-size:10px; opacity: .5; margin: -1px;">Discover immersive content</P> </a>
+                        </div>
+                        <div class="itembox">
+                            <img src="pics\user-group.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">About us   <P style="font-size:10px; opacity: .5; margin: -1px;">our mission our vision </P></a>
+                        </div>
+                        
+
+                        <div  class="menumode">
+                            <img src="pics\sun.png" alt="arow" style="height:30px; width:30px ;">
+                            <P style="font-size: 15px; color: #ffffff; margin: -1px; ">Light Mode </P>
+                            <img src="pics\Group 8.png" alt="arow" style="height:25px; width:40px ;">
+
+                        </div>
+
+
+                        <div  class="foot">
+                            <img src="pics\pic.png" alt="arow" style="height:40px; width:40px ;">
+                            <P style="font-size: 15px; color: #ffffff; margin: -1px; ">Zaynab Bilto </P>
+                            <img src="pics\logout.png" alt="arow" style="height:25px; width:25px ;">
+
+                        </div>
+                   </div>
+              </div>
+
+           </div>
+        </div>
+    </div>
+    
+<!-- ------------------title-------------------------------- -->
+    <div class="navbar">
+       <div  class="nav-scroll" >
+            <a href="#home">World</a>
+            <div class="line2">.</div>
+            <a href="#about">Middle East</a>
+            <div class="line2">.</div>
+            <a href="#services">Politics</a>
+            <div class="line2">.</div>
+            <a href="#portfolio">Business</a>
+            <div class="line2">.</div>
+            <a href="#blog">Health</a>
+            <div class="line2">.</div>
+            <a href="#contact">Entertainment</a>
+            <div class="line2">.</div>
+            <a href="sport.html">Sport</a>
+            <div class="line2">.</div>
+            <a href="#more">Earth</a>
+            <div class="line2">.</div>
+            <a href="#portfolio">Culture</a>
+            <div class="line2">.</div>
+            <a href="#blog">Innovation</a>
+            <div class="line2">.</div>
+            <a href="#contact">Science</a>
+            
+       </div>
+   </div>
+   
+
+
+<!-- ------------------breakingbar-------------------------------- -->
+
+ <div class="breaking-news">
+     <span class="breaking-label">
+                 <img src="pics\glob.png" alt="arow" style="height:30px; width:30px ;"> BREAKING
+     </span>
+            <span class="breaking-text">Global Climate Summit Reaches Historic Agreement</span>
+            <div class="between">
+             <div class="dot"></div>
+             <p >Live</p>
+     </div>
+ </div>
+
+<!-----------main---------------------------------->
+    <div class="main">
+  <div class="title-img-container">
+
+    <!-- Left column (h11 + h22) -->
+    <div class="text-column">
+      <div class="h11">
+        <span class="word delay1">Step into the </span><br>
+        <span class="word delay2">future of</span><br>
+        <span class="word delay3">journalism</span>
+      </div>
+
+      <div class="h22">
+        Here news is more than just words on a screen 
+        <span class="translated-word">It’s An Experience</span><br>
+        With immersive <span class="translated-word">360°</span> videos, trusted sources, and AI-powered insights<br>
+        we bring you closer to the heart of every story<br>
+        Discover the world as if you were there
+      </div>
+    </div>
+
+    <!-- Right column (3D model) -->
+    <div class="sketchfab-embed-wrapper">
+      <iframe 
+        title="Samsung Gear VR"
+        src="https://sketchfab.com/models/55a9b75a90ad4b65891668d850a8dd36/embed?camera=0&transparent=1&ui_infos=0&ui_watermark_link=0&ui_watermark=0&ui_hint=0&ui_color=43007F"
+        frameborder="0"
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</div>
+  
+<!-----------line---------------------------------->
+<div class="center-line"></div>
+
+
+<!-----------trending ---------------------------------->
+  <div class="trendingdiv">
+        <div class="trending-inner">
+            <img src="pics\Line 11.png" alt="arrow" style="height:20px; width:35px;">
+            <h3 class="trending">Trending Topics</h3>
+        </div>
+  </div>
+
+   <div class="trendinghash">
+       <button class="hover-button">#Climate Change</button>
+        <button class="hover-button">#Renewable Energy</button>
+        <button class="hover-button">#Global Economy</button>
+        <button class="hover-button">#Healthcare Innovation</button>
+        <button class="hover-button">#Space Exploration</button>
+        <button class="hover-button">#AI Revolution</button>
+    </div>
+<!-----------trendingnews---------------------------------->
+
+<div class="news-section">
+  
+  <div class="main-article">
+        <img src="pics\nn.jpg" alt="Main news" class="news1-img">
+        <div class="news1-text">
+        <div class="tag1">
+            <img src="pics\earth.png" alt="earth" style="height:20px; width:20px ; ">
+            Earth
+        </div>
+        <div class="tag2">
+            <img src="pics\dot3.png" alt="earth" style="height:10px; width:10px ; ">
+            360°
+        </div>
+        <a href="artical.html" style="text-decoration: none;">
+        <h1>Amman Sees Peace March Calling for Dialogue and an End to Violence</h1></a>
+        <p class="author">By Reuters</p>
+        <p class="date">September 16, 2025 7:52 PM GMT+3 · Updated 1 Hour Ago</p>
+        </div>
+
+        
+        <div class="btn2box">
+            <button class="btn2">Experience in 360°</button>
+        </div>
+
+  </div>
+
+  
+  <div class="trending-newsbox">
+        <h3>Trending News</h3>
+
+      <div class="news-list">
+
+        <div class="news-item">
+            <img src="pics\space.jpg" alt="space" style=" width: 120px; height: auto;">
+            <div class="news-info">
+                    <p class="title">ASTRONAUT EVA MISSION SUCCESS</p>
+                    <div class="clocksection">
+                        <span>
+                            <img src="pics\clock.png" alt="arow" style="height:20px; width:20px ;">
+                            5 MIN
+                        </span> 
+                        <span class="ar"><img src="pics\Vector.png" alt="arow" style="height:22px; width:20px ;">
+                            AR</span>
+                   </div>
+                </div>
+          </div>
+
+        <div class="news-item">
+            <img src="pics\tec.jpg" alt="space" style=" width: 120px; height: 120px;">
+            <div class="news-info">
+                    <p class="title">AI Breakthrough in Healthcare</p>
+                    <div class="clocksection">
+                        <span>
+                            <img src="pics\clock.png" alt="arow" style="height:20px; width:20px ;">
+                            10MIN
+                        </span> 
+                        <span class="ar">
+                            <img src="pics\Vector.png" alt="arow" style="height:22px; width:20px ;">
+                            AR</span>
+                   </div>
+                   
+                   
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="pics\hand.png" alt="space" style=" width: 120px; height: auto;">
+            <div class="news-info">
+                    <p class="title">Global Climate Summit Resu</p>
+                    <div class="clocksection">
+                        <span>
+                            <img src="pics\clock.png" alt="arow" style="height:20px; width:20px ;">
+                            1HOUR
+                        </span> 
+                        <div class="tag3">
+                            <img src="pics\dot3.png" alt="earth" style="height:20px; width:20px ; ">
+                            360°
+                       </div>
+                    
+                   </div>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="pics\earth1.webp" alt="space" style=" width: 120px; height: 150px;">
+            <div class="news-info">
+                    <p class="title">weather, state of the atmosphere at a particular place</p>
+                    <div class="clocksection">
+                        <span>
+                            <img src="pics\clock.png" alt="arow" style="height:20px; width:20px ;">
+                            30MIN
+                        </span> 
+                        <div class="tag3">
+                            <img src="pics\dot3.png" alt="earth" style="height:20px; width:20px ; ">
+                            360°
+                       </div>
+                    
+                   </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-----------line---------------------------------->
+<div class="center-line2"></div>
+<!--------------latestnews------------------->
+
+
+
+ <script src="java.js"></script>
+</body>
+</html>

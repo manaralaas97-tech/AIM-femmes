@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />             <!-- supports most languages and symbols -->           
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- makes the site responsive (scales properly on mobile screens)-->
+  <title>article</title>
+  <!-- Link to a CSS file -->
+ 
+  <link rel="stylesheet" href="style3.css" />
+</head>
+
+
+<body>
+<!-- ------------------topdate-------------------------------- -->
+     <div class="datesection">
+          <div class="between">
+             <p id="current-date" class="date-text"></p>
+             <div class="line"></div>
+          </div>
+          <div class="between">
+             <div class="dot"></div>
+             <p >Live</p>
+         </div>
+     </div>
+<!-- ------------------AI robot-------------------------------- -->
+<div class="ai" onclick="toggleAskBar()">
+<img src="pics\AI.png" alt="My Logo" style="width: auto;" height="50px">
+</div>
+
+<div class="ask-bar" id="askBar">
+ 
+  <input type="text" placeholder="Ask Me Anything...">
+  <button>
+    <img src="pics\Chevron_Up.png" alt="My Logo" style="width: auto;" height="20px">
+  </button>
+</div>
+
+
+<!-- ------------------title-------------------------------- -->
+    <div class="titlebox">
+        <div class="title">
+            <div class="logotitle">
+               <img src="pics\logo4.png" alt="My Logo" class="logo">
+               <h1>ReLive</h1>
+               <h3>IMMERSIVE <br> NEWS</h3>
+            </div>
+           
+           </div>
+        <div class="right">
+           <div class="bottons">
+           <a href="login.html"> <button class="btn">Log in</button></a>
+            <a href="signup.html"><button class="btn">Sign up</button></a>
+
+           </div>
+
+
+
+
+
+          <div class="searchmenu">
+
+
+              <div class="search-container">
+                 <button class="search-btn"  onclick="toggleSearch()">
+                      <img src="pics\search3.png" alt="search" class="search-img">
+                 </button>
+
+                 <div class="search-barmain" id="searchBar">
+                      <input type="text" placeholder="Search..." id="searchInput">
+                 </div>
+              </div>
+
+
+
+
+
+              <div class="menu-container">
+                  <button class="menu-btn" onclick="toggleMenu()">
+                       <img src="pics\menu2.png" alt="menu" class="menu-img">
+                  </button>
+
+                   <div id="menu" class="menudrop">
+                       <div class="menutitle">
+                          <p>ReLive</p>
+                          <img src="pics\menu2.png" alt="menu" >
+                       </div>
+
+                        <div class="search-bar">
+                           <img src="pics\search3.png" alt="search" > 
+                           <input type="text" placeholder="Search..." id="searchInput">
+                           
+                        </div>
+                     
+
+
+
+
+                        <div class="itembox">
+                            <img src="pics\Line 11.png" alt="arow" style="height:20px; width:25 ;">
+                            <a href="#">Trending Topic</a>
+                        </div>
+                     
+                        <div class="itembox">
+                            <img src="pics\user.png" alt="arow"  style="height:30px; width:30px ;">
+                            <a href="#">profile<P style="font-size:10px; opacity: .5; margin: -1px;">your account sittings </P></a>
+                        </div>
+                        <div class="itembox">
+                            <img src="pics\cog.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">Setting</a>
+                        </div>
+                        <div class="itembox">
+                            <img src="pics\bookmark.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">Saved <P style="font-size:10px; opacity: .5; margin: -1px;">Your bookmarked articles and experiences</P> </a>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="pics\folder-open.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">Our Resources</a>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="pics\360°.png" alt="arow" style="height:20px; width:35px ;">
+                            <a href="#">AR & 360°  <P style="font-size:10px; opacity: .5; margin: -1px;">Discover immersive content</P> </a>
+                        </div>
+                        <div class="itembox">
+                            <img src="pics\user-group.png" alt="arow" style="height:30px; width:30px ;">
+                            <a href="#">About us   <P style="font-size:10px; opacity: .5; margin: -1px;">our mission our vision </P></a>
+                        </div>
+                        
+
+                        <div  class="menumode">
+                            <img src="pics\sun.png" alt="arow" style="height:30px; width:30px ;">
+                            <P style="font-size: 15px; color: #ffffff; margin: -1px; ">Light Mode </P>
+                            <img src="pics\Group 8.png" alt="arow" style="height:25px; width:40px ;">
+
+                        </div>
+
+
+                        <div  class="foot">
+                            <img src="pics\pic.png" alt="arow" style="height:40px; width:40px ;">
+                            <P style="font-size: 15px; color: #ffffff; margin: -1px; ">Zaynab Bilto </P>
+                            <img src="pics\logout.png" alt="arow" style="height:25px; width:25px ;">
+
+                        </div>
+                   </div>
+              </div>
+
+           </div>
+        </div>
+    </div>
+    
+<!-- ------------------title-------------------------------- -->
+    <div class="navbar">
+       <div  class="nav-scroll" >
+            <a href="#home">World</a>
+            <div class="line2">.</div>
+            <a href="#about">Middle East</a>
+            <div class="line2">.</div>
+            <a href="#services">Politics</a>
+            <div class="line2">.</div>
+            <a href="#portfolio">Business</a>
+            <div class="line2">.</div>
+            <a href="#blog">Health</a>
+            <div class="line2">.</div>
+            <a href="#contact">Entertainment</a>
+            <div class="line2">.</div>
+            <a href="#faq">Sport</a>
+            <div class="line2">.</div>
+            <a href="#more">Earth</a>
+            <div class="line2">.</div>
+            <a href="#portfolio">Culture</a>
+            <div class="line2">.</div>
+            <a href="#blog">Innovation</a>
+            <div class="line2">.</div>
+            <a href="#contact">Science</a>
+            
+       </div>
+   </div>
+<!-- ------------------btn-------------------------------- -->
+ 
+       <a href="main.html" class="back">
+       <img src="pics/arrow.png" >
+       </a>
+
+       <a href="main.html" class="back2">
+       <img src="pics/upload.png" >
+       </a>
+
+
+       <a href="main.html" class="back3">
+       <img src="pics/Icon save.png" >
+       </a>
+    
+
+
+<!-- ------------------btn-------------------------------- -->
+
+<div class="article">
+  <div class="article-header">
+    <img src="pics/nn.jpg" alt="Astronaut EVA">
+    <a href="" class="exp-tag">
+      <div>Experience in 360°</div>
+    </a>
+  </div>
+
+  <div class="article-content">
+    <div class="meta">
+      <span>
+        <img src="pics/clock.png" alt="Astronaut EVA">   
+        3 HOUR
+      </span>
+      <span>politics</span>
+    </div>
+
+    <!-- Article title -->
+    <div class="title">Hundreds March in Amman Advocating Peace and Dialogue in the Middle East</div>
+    <div class="subtitle">
+     Hundreds of young Jordanians, alongside representatives from civil society organizations and international humanitarian groups, participated in a large peaceful march in downtown Amman on Friday. The event, titled “Together for Peace,” aimed to promote dialogue, tolerance, and an end to violence across the Middle East.
+    </div>
+
+    <!-- Bottom box -->
+    <div class="bottom-box">
+      <div class="boxexmain">
+        <div class="imgsbox">
+          <img src="pics/Vector.png" alt="icon">
+        </div>
+        <div class="boxex">
+          <span class="main-text">360° EXPERIENCE</span>
+          <span class="sub-text">
+            Experience the peaceful march with our immersive 360° simulation.
+          </span>
+          <a href="" class="exp-tag2">
+            <div>Start 360° Experience</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Para1 moved here -->
+    <div class="para1">
+      <p class="p1">
+       Participants carried white flags and banners with messages urging understanding, coexistence, and the rejection of all forms of armed conflict. Organizers highlighted that the march’s primary objective was to convey a unified message to the international community: that peace is the choice of the people.
+
+In their closing statement, the demonstrators emphasized that dialogue between nations and communities is the most effective path to resolving conflicts, and called for stronger international engagement to halt ongoing wars. They also reiterated their commitment to nonviolence and adherence to local laws.
+      </p>
+      <img src="pics/nn2.jpg" class="pimg1">
+    </div>
+
+
+     <!-- Para1 moved here -->
+    <div class="para1">      
+    <img src="pics/nn3.jpg" class="pimg1">
+      <p class="p1">
+      The event drew significant attention on social media, with widespread support from online communities highlighting the role of youth in advocating for peace. Many participants expressed hope that such grassroots initiatives can inspire regional and global efforts to resolve disputes diplomatically.
+
+Security personnel were deployed to ensure the smooth flow of traffic and maintain the peaceful nature of the march, underscoring the coordination between civil society groups and local authorities.
+      </p>
+    </div>
+    <div class="para1">      
+      <p class="p1">
+      Organizers noted that the event is part of a growing movement across the region in which young people and local organizations seek to foster a culture of dialogue, tolerance, and mutual respect. They stressed that lasting peace begins at the community level, with ordinary citizens taking active roles in promoting understanding and cooperation.
+
+The peaceful demonstration in Amman serves as a reminder that constructive engagement and grassroots initiatives can complement international diplomacy in the pursuit of lasting solutions to regional conflicts.
+      </p>
+    </div>
+<!-----------line---------------------------------->
+
+    
+
+  </div> <!-- End of article-content -->
+</div> <!-- End of article -->
+ <div class="center-line"></div>
+
+ <div class="res">      
+      
+
+
+Bloomberg → https://www.bloomberg.com
+
+Financial Times → https://www.ft.com
+
+CNBC → https://www.cnbc.com/world
+
+<br>
+
+Space.com → https://www.space.com/news
+
+NASA News → https://www.nasa.gov/news
+
+MIT Technology Review → https://www.technologyreview.com
+
+<br>
+
+NewsAPI → https://newsapi.org
+ (lets you fetch articles programmatically)
+
+Mediastack API → https://mediastack.com
+      
+    </div>
+
+
+<script src="java.js"></script>
+</body>
+</html>
